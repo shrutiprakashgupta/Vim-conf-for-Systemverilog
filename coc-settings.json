@@ -1,0 +1,16 @@
+{
+    "languageserver": {
+        "svlangserver": {
+			"module": "/usr/local/lib/node_modules/@imc-trading/svlangserver/bin/main.js",
+            "filetypes": ["systemverilog"],
+            "settings": {
+                "systemverilog.includeIndexing": ["**/*.{sv,svh}"],
+                "systemverilog.excludeIndexing": ["test/**/*.sv*"],
+                "systemverilog.defines" : [],
+                "systemverilog.launchConfiguration": "/usr/bin/verilator -sv -Wall --lint-only",
+                "systemverilog.formatCommand": "/bin/verible-verilog-format"
+            }
+        }
+    }
+}
+
